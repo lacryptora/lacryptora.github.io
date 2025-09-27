@@ -6,9 +6,8 @@ categories: [Web Pentesting, HTB CWES]
 tags: [Brute-Force Attacks, Password Attacks, Authentication Bypasses]
 ---
 
-# Introduction to Authentication
-## What is Authentication
-# Authentication vs. Authorization  
+## Introduction to Authentication
+### Authentication vs. Authorization  
 
 Authentication and Authorization often get mixed up, but they play **different roles** in securing systems.  
 Think of it like a **club entry**:  
@@ -51,14 +50,14 @@ Think of it like a **club entry**:
 - **Single-Factor** = Just one (e.g., Password only )  
 - **Multi-Factor (MFA)** = Mix it up (Password + Phone Code )  
 - **2FA** = The classic combo of *exactly two* factors  
-# Understanding Attacks on Authentication  
+## Understanding Attacks on Authentication  
 
 Authentication is the first line of defense in security — but each method comes with its own risks.  
 Here’s a breakdown of how attackers target the three major authentication factors.  
 
 ---
 
-## Knowledge-Based Authentication  
+### Knowledge-Based Authentication  
 **What it is:** Something you know (passwords, PINs, security questions).  
 
 **Why it’s common:** Simple, cheap, and widely deployed.  
@@ -73,7 +72,7 @@ Here’s a breakdown of how attackers target the three major authentication fact
 
 ---
 
-## Ownership-Based Authentication  
+### Ownership-Based Authentication  
 **What it is:** Something you have (smart cards, security tokens, mobile authenticator apps).  
 
 **Strengths:** Resistant to phishing and guessing attacks; harder to attack remotely.  
@@ -87,7 +86,7 @@ Here’s a breakdown of how attackers target the three major authentication fact
 
 ---
 
-## Inherence-Based Authentication  
+### Inherence-Based Authentication  
 **What it is:** Something you are (fingerprint, facial scan, voice recognition).  
 
 **Strengths:** Seamless user experience, no need to remember or carry anything.  
