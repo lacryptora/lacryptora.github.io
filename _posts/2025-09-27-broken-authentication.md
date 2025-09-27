@@ -17,8 +17,6 @@ Think of it like a **club entry**:
 
 ---
 
-## 🔹 Comparison Table  
-
 | **Aspect**        | **Authentication**                                | **Authorization**                                   |
 |--------------------|---------------------------------------------------|-----------------------------------------------------|
 | **Purpose**        | Verifies identity (Are you really who you claim?) | Determines permissions (What are you allowed to do?) |
@@ -29,10 +27,8 @@ Think of it like a **club entry**:
 
 ---
 
-## 🔹 Real-World Analogy  
-
-1. **Authentication** = Security guard checks your **ID card** at the entrance.  
-2. **Authorization** = Guard checks the **list of rooms** you’re allowed to enter.  
+**Authentication** = Security guard checks your **ID card** at the entrance.  
+**Authorization** = Guard checks the **list of rooms** you’re allowed to enter.
 
 - Without authentication → You don’t even get inside the building.  
 - Without authorization → You might get in, but you won’t know which rooms you can enter.  
@@ -104,9 +100,3 @@ Here’s a breakdown of how attackers target the three major authentication fact
 **Case Study (2019):** A biometric smart lock provider was breached, leaking fingerprints, facial scans, passwords, and user addresses. Unlike a password reset, biometric identifiers cannot be replaced once stolen.  
 
 ---
-
-## Key Takeaways  
-- **Knowledge factors** are the easiest to compromise.  
-- **Ownership factors** are stronger but face physical risks.  
-- **Inherence factors** are convenient but carry irreversible consequences if breached.  
-- The strongest defense is **Multi-Factor Authentication (MFA)**, combining two or more factors to raise the attack barrier.  
