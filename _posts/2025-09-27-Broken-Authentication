@@ -3,7 +3,7 @@ layout: post
 title: "Broken Authentication"
 date: 2025-09-27 13:00
 categories: [Web Pentesting, HTB CWES]
-tags: [Sistem Kurtarma, BTRFS, Dosya Sistemleri]
+tags: [Brute-Force Attacks, Password Attacks, Authentication Bypasses]
 ---
 
 # Introduction to Authentication
