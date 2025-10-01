@@ -2,11 +2,11 @@
 ---
 layout: post
 title: "Broken Authentication"
-date: 2025-10-1 13:00
+date: 2025-10-1 4:00
 categories: [Web Pentesting]
 tags: [Brute-Force Attacks, Password Attacks, Authentication Bypasses]
-
 ---
+
 # Introduction to Authentication
 
 ## Authentication vs. Authorization  
@@ -132,7 +132,6 @@ wc -l custom_wordlist.txt
 ```bash
 ffuf -w ./custom_wordlist.txt -u http://172.17.0.2/index.php -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "username=admin&password=FUZZ" -fr "Invalid username"
 ```
- [Cracking Passwords with Hashcat](https://academy.hackthebox.com/module/details/20) and [Password Attacks](https://academy.hackthebox.com/module/details/147) modules
 
 ---
 ## Brute-Forcing Password Reset Tokens
