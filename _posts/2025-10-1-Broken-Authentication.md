@@ -134,13 +134,11 @@ ffuf -w ./custom_wordlist.txt -u http://172.17.0.2/index.php -X POST -H "Content
 
 ---
 ## Brute-Forcing Password Reset Tokens
-
- ![[auth1.jpg]]
  
 ### Identifying Weak Reset Tokens
- - [ ] 1- Create an account on the target web application
- - [ ] 2- Request a password reset token
- - [ ] 3- analyze it 
+- [ ] 1- Create an account on the target web application
+- [ ] 2- Request a password reset token
+- [ ] 3- analyze it 
 
 ---
 
