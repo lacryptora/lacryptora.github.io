@@ -104,9 +104,9 @@ Here’s a breakdown of how attackers target the three major authentication fact
 **Case Study (2019):** A biometric smart lock provider was breached, leaking fingerprints, facial scans, passwords, and user addresses. Unlike a password reset, biometric identifiers cannot be replaced once stolen.  
 
 ---
+
 # Brute-Force Attacks
 ## Enumerating Users
-
 
 https://github.com/danielmiessler/SecLists/tree/master/Usernames
 
@@ -135,13 +135,15 @@ ffuf -w ./custom_wordlist.txt -u http://172.17.0.2/index.php -X POST -H "Content
 ---
 ## Brute-Forcing Password Reset Tokens
 
- ### Identifying Weak Reset Tokens
- ![[Pasted image 20250929053806.png]]
+ ![[auth1.jpg]]
  
+### Identifying Weak Reset Tokens
  - [ ] 1- Create an account on the target web application
  - [ ] 2- Request a password reset token
  - [ ] 3- analyze it 
+
 ---
+
 ## Attacking Weak Reset Tokens  
 ```bash
 seq -w 0 9999 > tokens.txt 
@@ -154,6 +156,7 @@ ffuf -w ./tokens.txt -u http://weak_reset.htb/reset_password.php?token=FUZZ -fr 
 ```
 
 ---
+
 # Brute-Forcing 2FA Codes
 ### Attacking Two-Factor Authentication (2FA)
 
@@ -165,17 +168,20 @@ ffuf -w ./tokens.txt -u http://bf_2fa.htb/2fa.php -X POST -H "Content-Type: appl
 ```
 
 ---
+
 ## Weak Brute-Force Protection
 - Rate Limits
 - CAPTCHAs
 
 ---
+
 # Password Attacks
-## Testing Default Credentials
- [Testing for Default Credentials](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/02-Testing_for_Default_Credentials)
-[CIRT.net](https://www.cirt.net/passwords)
-[SecLists Default Credentials](https://github.com/danielmiessler/SecLists/tree/master/Passwords/Default-Credentials)
-[SCADA](https://github.com/scadastrangelove/SCADAPASS/tree/master) 
+## Testing Default Credentials:
+
+- [Testing for Default Credentials](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/02-Testing_for_Default_Credentials) .
+- [CIRT.net](https://www.cirt.net/passwords) .
+- [SecLists Default Credentials](https://github.com/danielmiessler/SecLists/tree/master/Passwords/Default-Credentials) .
+- [SCADA](https://github.com/scadastrangelove/SCADAPASS/tree/master) . 
 
 ---
 
@@ -199,6 +205,7 @@ wc -l german_cities.txt
 ```
 
 ---
+
 # Authentication Bypasses
 ## Authentication Bypass via Direct Access
   Applications sometimes issue a `302 Redirect` when a user is not logged in, but still include the protected content in the response body.  
@@ -209,7 +216,9 @@ wc -l german_cities.txt
   - Request a protected endpoint without authentication.  
   - Inspect the raw response body, not just what the browser shows.  
   - If sensitive content is present behind a redirect, the app is vulnerable.  
---------
+
+---
+
 ## Authentication Bypass via Parameter Modification
 
 ### What’s the issue?
@@ -220,7 +229,9 @@ If you can change those parameters, you may **become another user or even an adm
 2. Compare with vs. without the parameter.  
 3. Change values (`0`, `1`, `9999`) and watch the response.  
 4. Confirm admin-only content or functions appear.
+
 ---
+
 # Session Attacks
 ## Attacking Session Tokens
 ### **Identify Weak Tokens**
