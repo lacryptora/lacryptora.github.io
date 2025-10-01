@@ -2,7 +2,7 @@
 ---
 layout: post
 title: "Broken Authentication"
-date: 2025-09-27 13:00
+date: 2025-10-1 13:00
 categories: [Web Pentesting]
 tags: [Brute-Force Attacks, Password Attacks, Authentication Bypasses]
 
