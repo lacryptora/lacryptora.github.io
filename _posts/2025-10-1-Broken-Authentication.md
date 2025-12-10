@@ -17,7 +17,7 @@ Think of it like a **club entry**:
 
 ---
 
-## 🔹 Comparison Table  
+## Comparison Table  
 
 | **Aspect**        | **Authentication**                                | **Authorization**                                   |
 |--------------------|---------------------------------------------------|-----------------------------------------------------|
@@ -29,7 +29,7 @@ Think of it like a **club entry**:
 
 ---
 
-## 🔹 Real-World Analogy  
+## Real-World Analogy  
 
 1. **Authentication** = Security guard checks your **ID card** at the entrance.  
 2. **Authorization** = Guard checks the **list of rooms** you’re allowed to enter.  
