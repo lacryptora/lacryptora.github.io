@@ -625,6 +625,7 @@ UN/**/ION SEL/**/ECT
 1e0 = 1
 ```
 ## Defensive PHP snippet(never show raw DB errors)
+
 ```PHP
 try {
 $pdo->prepare('...')->execute($params);
