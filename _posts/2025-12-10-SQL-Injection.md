@@ -260,11 +260,11 @@ The `AND`, `OR` and `NOT` operators can also be represented as `&&`, `||`
 
 ### Operators in queries
  
-```MySQL
-SELECT * FROM logins WHERE username != 'john';
+```SQL
+ SELECT * FROM logins WHERE username != 'john';
 ```
-```MySQL
-SELECT * FROM logins WHERE username != 'john' AND id > 1;
+```SQL
+ SELECT * FROM logins WHERE username != 'john' AND id > 1;
 ```
 ### Multiple Operator Precedence
 - Division (`/`), Multiplication (`*`), and Modulus (`%`)
