@@ -624,16 +624,8 @@ UN/**/ION SEL/**/ECT
 -- scientific notation obfuscation example
 1e0 = 1
 ```
-## Defensive PHP snippet(never show raw DB errors)
 
-```PHP
-try {
-$pdo->prepare('...')->execute($params);
-} catch (PDOException $e) {
-error_log($e->getMessage());
-http_response_code(500);
-echo 'internal error';
-}
-```
+---
+
 
 
